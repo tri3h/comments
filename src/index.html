@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Comments</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <form action="submit" class="comment-form" id="comment-form">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Имя"
+                    class="comment-form__name"
+                />
+                <textarea
+                    name="text"
+                    cols="60"
+                    rows="10"
+                    placeholder="Текст комментария"
+                    class="comment-form__textarea"
+                ></textarea>
+                <input
+                    type="text"
+                    name="date"
+                    placeholder="ДД.ММ.ГГГГ"
+                    class="comment-form__date"
+                    maxlength="10"
+                />
+                <button class="comment-form__submit" type="submit">
+                    Добавить
+                </button>
+            </form>
+            <div class="comments"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+@import url("./fonts.css")
+
+$color-iron: #DADCDD
+$color-cerulean: #00A2D9
+$color-bondi-blue: #0086B3
+$color-white: #FFF 
+$color-black: #000
+$color-chablis: #FFEFEF
+$color-crimson: #CB1427
+$color-boulder: #787878
+$color-mystic: #EBF0F2
+$color-outer-space: #242F33
+
+$font-pt-sans: "PT Sans", sans-serif
+
+$screen_size_sm: 480px
+
+body 
+    font-family: $font-pt-sans
+
+.container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 30px auto
+    max-width: 460px
+    @media (max-width: $screen_size_sm)
+        max-width: 95%
+
+.comment-form
+    display: flex
+    flex-direction: column
+    gap: 12px
+    margin-bottom: 20px
+    max-width: 460px
+    @media (max-width: $screen_size_sm)
+        max-width: 95%
+    &__name
+        padding: 5px
+        border: 1px solid $color-iron
+        border-radius: 4px
+        &:focus, &:hover
+            border-color: $color-black
+    &__textarea
+        padding: 5px
+        border: 1px solid $color-iron
+        border-radius: 4px
+        resize: vertical
+        &:focus, &:hover
+            border-color: $color-black
+    &__date 
+        border: 1px solid $color-iron
+        padding: 5px
+        border-radius: 4px
+        &:focus, &:hover
+            border-color: $color-black
+    &__submit
+        background: $color-cerulean
+        color: $color-white
+        border-radius: 30px
+        padding: 10px 30px
+        text-align: center
+        text-transform: uppercase
+        transition: all .2s ease
+        align-self: flex-start
+        &:focus, &:hover
+            background: $color-bondi-blue
+    &__tooltip
+        padding: 5px
+        background-color: $color-chablis
+        color: $color-boulder
+        text-align: center
+
+.comments
+    width: 100%
+
+.comment 
+    width: 100%
+    margin-bottom: 20px
+    &__info
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        background-color: $color-mystic
+        padding: 7px
+    &__name 
+        color: $color-cerulean
+        font-weight: 700
+        margin-bottom: 7px
+    &__date 
+        color: $color-boulder
+        margin-bottom: 7px
+    &__delete-icon
+        font-size: 16px
+        color: #787878
+        user-select: none 
+        cursor: pointer
+        &:hover 
+             color: #000
+    &__text 
+        color: $color-outer-space
+        padding: 10px 0 
+        overflow-wrap: break-word
+        line-height: 1.5
+    &__like
+        display: inline-flex
+        align-items: center
+        gap: 5px
+        cursor: pointer
+        color: $color-cerulean
+        &:hover 
+             color: $color-bondi-blue
+        &-icon
+            user-select: none
+            font-size: 16px
+        &_pressed
+            color: $color-bondi-blue
+            font-variation-settings: 'FILL' 1

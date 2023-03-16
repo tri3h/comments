@@ -1,0 +1,33 @@
+*{padding:0;margin:0;border:0}*,*:before,*:after{box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}nav,footer,header,aside{display:block}html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}input,button,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{-webkit-text-decoration:none;text-decoration:none}a:hover{-webkit-text-decoration:none;text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}
+/* pt-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/pt-sans-v17-latin-regular..woff2) format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+            url(fonts/pt-sans-v17-latin-regular..woff) format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pt-sans-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url(fonts/pt-sans-v17-latin-italic..woff2) format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+            url(fonts/pt-sans-v17-latin-italic..woff) format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pt-sans-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/pt-sans-v17-latin-700..woff2) format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+            url(fonts/pt-sans-v17-latin-700..woff) format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body{font-family:"PT Sans",sans-serif}.container{display:flex;flex-direction:column;align-items:center;margin:30px auto;max-width:460px}@media(max-width: 480px){.container{max-width:95%}}.comment-form{display:flex;flex-direction:column;gap:12px;margin-bottom:20px;max-width:460px}@media(max-width: 480px){.comment-form{max-width:95%}}.comment-form__name{padding:5px;border:1px solid #dadcdd;border-radius:4px}.comment-form__name:focus,.comment-form__name:hover{border-color:#000}.comment-form__textarea{padding:5px;border:1px solid #dadcdd;border-radius:4px;resize:vertical}.comment-form__textarea:focus,.comment-form__textarea:hover{border-color:#000}.comment-form__date{border:1px solid #dadcdd;padding:5px;border-radius:4px}.comment-form__date:focus,.comment-form__date:hover{border-color:#000}.comment-form__submit{background:#00a2d9;color:#fff;border-radius:30px;padding:10px 30px;text-align:center;text-transform:uppercase;transition:all .2s ease;align-self:flex-start}.comment-form__submit:focus,.comment-form__submit:hover{background:#0086b3}.comment-form__tooltip{padding:5px;background-color:#ffefef;color:#787878;text-align:center}.comments{width:100%}.comment{width:100%;margin-bottom:20px}.comment__info{display:flex;flex-direction:row;justify-content:space-between;background-color:#ebf0f2;padding:7px}.comment__name{color:#00a2d9;font-weight:700;margin-bottom:7px}.comment__date{color:#787878;margin-bottom:7px}.comment__delete-icon{font-size:16px;color:#787878;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer}.comment__delete-icon:hover{color:#000}.comment__text{color:#242f33;padding:10px 0;word-wrap:break-word;line-height:1.5}.comment__like{display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:#00a2d9}.comment__like:hover{color:#0086b3}.comment__like-icon{-webkit-user-select:none;-moz-user-select:none;user-select:none;font-size:16px}.comment__like_pressed{color:#0086b3;font-variation-settings:"FILL" 1}
